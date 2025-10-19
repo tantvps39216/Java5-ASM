@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link th:href="@{/css/layout.css}" rel="stylesheet" >
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <style>
+        body {
+  background-color: #f5f6fa;
+}
+    </style>
+</head>
+<body>
+    <div th:replace="layout/header :: header"></div>
+    <div th:replace="layout/nav :: nav"></div>
+    <div th:replace="layout/menu :: menu"></div>
+<!--    Sản phẩm nổi bật-->
+    <div class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="fw-bold">SẮM THÊM PHỤ KIỆN CHẤT LƯỢNG</h5>
+            <a href="#" class="text-primary text-decoration-none">Xem tất cả &nbsp;›</a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 p-3 bg-white rounded-4 shadow-sm">
+            <!-- Mỗi ô danh mục -->
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9G05VYEFVX2VCHYZY1R7.webp}" class="img-fluid mb-2" alt="Phụ kiện Apple" style="height:60px">
+                    <p class="small mb-0">Phụ kiện Apple</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9GEB6TV510FK9GJPJK4N.webp}" class="img-fluid mb-2" alt="Cáp, sạc" style="height:60px">
+                    <p class="small mb-0">Cáp, sạc</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9GHJ4RRYBDS2Y2WEKRZV.webp}" class="img-fluid mb-2" alt="Pin sạc dự phòng" style="height:60px">
+                    <p class="small mb-0">Pin sạc dự phòng</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9GMV76QGJDAPAAJ9M26V.webp}" class="img-fluid mb-2" alt="Ốp lưng" style="height:60px">
+                    <p class="small mb-0">Ốp lưng - Bao da</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9GSARTJ2C2XKJSJZB85Z.webp}" class="img-fluid mb-2" alt="Dán màn hình" style="height:60px">
+                    <p class="small mb-0">Dán màn hình</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9GX3JKD0AHHSWBBK44TP.webp}" class="img-fluid mb-2" alt="Thẻ nhớ" style="height:60px">
+                    <p class="small mb-0">Thẻ nhớ, USB</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FAG6T4966NR0Z7ZSFXW5WD.webp}" class="img-fluid mb-2" alt="Phụ kiện Apple" style="height:60px">
+                    <p class="small mb-0">Balo, túi xách</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FAG6Q4JA1NNV2BFRPWFDGY.webp}" class="img-fluid mb-2" alt="Cáp, sạc" style="height:60px">
+                    <p class="small mb-0">Chuột, bàn phím</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FAG6KJ98DW8KHNXKFWARYF.webp}" class="img-fluid mb-2" alt="Pin sạc dự phòng" style="height:60px">
+                    <p class="small mb-0">Máy ảnh</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9HBE3PQPJEBJNS1ZZDZQ.webp}" class="img-fluid mb-2" alt="Ốp lưng" style="height:60px">
+                    <p class="small mb-0">Camera</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FA9H3ZX03AZB1CNX48DG80.webp}" class="img-fluid mb-2" alt="Dán màn hình" style="height:60px">
+                    <p class="small mb-0">Sim 4G - 5G</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="p-3 hover-card">
+                    <img th:src="@{/imgs/01K6FAG655JQDK9DBG3DW9ARDT.webp}" class="img-fluid mb-2" alt="Thẻ nhớ" style="height:60px">
+                    <p class="small mb-0">Gimbal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--  gợi í sp  -->
+    <div class="container my-4">
+        <div class="row" id="list_pro"></div>
+    </div>
+<!--ưu đãi-->
+    <div class="container my-5">
+        <div class="row g-4">
+            <!-- ƯU ĐÃI SINH VIÊN -->
+            <div class="col-md-6">
+                <div class="p-3 bg-white rounded-4 shadow-sm">
+                    <h5 class="fw-bold text-center mb-3">ƯU ĐÃI SINH VIÊN</h5>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img th:src="@{/imgs/uu-dai-laptop-hssv-b2s-dday3.png}" alt="Laptop" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/ipad-hssv-b2s-dday3.png}" alt="Laptop" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/laptop-hssv-b2s-dday3.png}" alt="iPad" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/samsung-home-update-1.webp}" alt="Samsung" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ƯU ĐÃI THANH TOÁN -->
+            <div class="col-md-6">
+                <div class="p-3 bg-white rounded-4 shadow-sm">
+                    <h5 class="fw-bold text-center mb-3">ƯU ĐÃI THANH TOÁN</h5>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <img th:src="@{/imgs/hsbcccccccccccc.webp}" alt="HSBC" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/techcombankkkkk.webp}" alt="Techcombank" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/uobbbbbb.webp}" alt="UOB" class="img-fluid rounded-3">
+                        </div>
+                        <div class="col-6">
+                            <img th:src="@{/imgs/vibbbbbbbbbbbb.webp}" alt="VIB" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHUYÊN TRANG THƯƠNG HIỆU -->
+        <div class="mt-5">
+            <h5 class="fw-bold mb-3">CHUYÊN TRANG THƯƠNG HIỆU</h5>
+            <div class="d-flex flex-wrap gap-3">
+                <img th:src="@{/imgs/apple-chinh-hang-home.webp}" alt="Apple" class="rounded-4 shadow-sm" style="width: 300px;">
+                <img th:src="@{/imgs/gian-hang-samsung-home.webp}" alt="Samsung" class="rounded-4 shadow-sm" style="width: 300px;">
+                <img th:src="@{/imgs/SIS asus.webp}" alt="Asus" class="rounded-4 shadow-sm" style="width: 300px;">
+                <img th:src="@{/imgs/xiaomi.webp}" alt="Xiaomi" class="rounded-4 shadow-sm" style="width: 300px;">
+            </div>
+        </div>
+
+    </div>
+    <div th:replace="layout/footer :: footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/product.js}"></script>
+
+
+</body>
+</html>

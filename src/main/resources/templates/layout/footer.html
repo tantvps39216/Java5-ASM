@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        footer {
+  background-color: #f8f8f8;
+  padding: 30px 15px 15px;
+  color: #333;
+  font-size: 13px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-left: 150px
+}
+
+.kt {
+  max-width: 1800px;
+  margin: 0 auto 30px;
+  display: grid;
+  /* Chia thành 4 cột bằng nhau */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+.kt-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kt-column li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.kt-column a {
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 14px;
+}
+
+.kt-column a:hover {
+  color: var(--color-primary, #d70018);
+}
+
+.kt-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.kt-info p {
+  color: #717171;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.kt-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .kt {
+    grid-template-columns: repeat(2, 1fr); /* Chuyển thành 2 cột trên Tablet */
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .kt {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên Mobile */
+    text-align: center;
+  }
+  .kt-column ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+    </style>
+</head>
+<body>
+<footer>
+    <div class="kt">
+        <div class="kt-column">
+            <ul>
+                <li><a href="#">iPhone Air | iPhone 17 | iPhone 17 Pro</a></li>
+                <li><a href="#">Giá iPhone 17 Pro Max</a></li>
+                <li><a href="#">iPhone 16 | iPhone 16 Pro Max</a></li>
+            </ul>
+        </div>
+
+        <div class="kt-column">
+            <ul>
+                <li><a href="#">Điện thoại | Điện thoại Xiaomi</a></li>
+                <li><a href="#">Điện thoại Samsung Galaxy | Điện thoại OPPO</a></li>
+            </ul>
+        </div>
+
+        <div class="kt-column">
+            <ul>
+                <li>
+                    <a href="#">Laptop | Laptop Acer | Laptop Dell | Laptop HP</a>
+                </li>
+                <li><a href="#">Tivi | Tivi Samsung | Tivi Sony | Tivi LG</a></li>
+            </ul>
+        </div>
+
+        <div class="kt-column">
+            <ul>
+                <li>
+                    <a href="#">Đồ gia dụng | Máy hút bụi gia đình | Build PC</a>
+                </li>
+                <li><a href="#">Camera | Back to school là gì</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="kt-info">
+        <p>
+            Công ty TNHH Thương Mại và Dịch Vụ Kỹ Thuật DIỆU PHÚC - GPĐKKD:
+            0316172372 cấp tại Sở KH & ĐT TP.HCM. Địa chỉ văn phòng: 350-352 Võ
+            Văn Kiệt, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam.
+            Điện thoại: 028.7108.9666.
+        </p>
+        <div class="kt-badges">
+            <img
+                    th:src="@{/imgs/logoSaleNoti.png}"
+                    alt="Logo Sale Noti"
+                    width="60"
+                    height="24"
+                    style="margin-right: 5px"
+            />
+            <img
+                    th:src="@{/imgs/dmca_copyright_protected150c.png}"
+                    alt="DMCA Protected"
+                    width="80"
+                    height="24"
+            />
+        </div>
+    </div>
+</footer>
+</body>
+</html>
